@@ -47,7 +47,7 @@ resource "azurerm_kubernetes_cluster" "this" {
   default_node_pool {
     name                    = "agentpool"
     auto_scaling_enabled    = true
-    host_encryption_enabled = true
+    host_encryption_enabled = false
     max_count               = 5
     max_pods                = 110
     min_count               = 2
